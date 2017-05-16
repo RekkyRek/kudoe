@@ -1,0 +1,76 @@
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-thumb
+  background: #666
+  border-radius: 20px
+
+::-webkit-scrollbar-track
+  background: #ddd
+  border-radius: 20px
+
+body
+  font-family: "San Francisco"
+  text-align: center
+  margin: 0px
+  display: flex
+  flex-direction: column
+  height: 100vh
+  #documents
+    flex: 1
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: flex-start
+    overflow-x: hidden
+    overflow-y: scroll
+    margin: 0rem 0.5rem 0.5rem 0rem
+    .document
+      height: 100px
+      width: 200px
+      background: #f5f5f5
+      border: 1px solid #ddd
+      border-radius: 3px
+      margin: 0.5rem
+      color: #666
+      position: relative
+      transition: color 0.2s, border 0.2s, background 0.2s
+      cursor: pointer
+      &:hover
+        color: #222
+        border: 1px solid #bbb
+        background: #f0f0f0
+      i
+        line-height: 100px
+        font-size: 2.5rem
+      p
+        position: absolute
+        top: 0px
+        left: 0px
+  button.controlButton
+    border: none
+    height: 1rem
+    width: 1rem
+    border-radius: 100%
+    margin: 0.25rem
+    &#close
+      background: #F25056
+    &#minimize
+      background: #FAC536
+    &#maximize
+      background: #39EA49
+  .topbar
+    -webkit-app-region: drag
+    height: 2rem
+    width: 100vw
+    display: flex
+    align-items: center
+    background: #f5f5f5
+  h1
+    font-weight: 300
+    font-size: 3rem
+    margin: 0.5rem
+  p
+    font-weight: 400
+  b
+    font-weight: 500

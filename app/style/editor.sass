@@ -1,0 +1,37 @@
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-thumb
+  background: #666
+  border-radius: 20px
+
+::-webkit-scrollbar-track
+  background: #ddd
+  border-radius: 20px
+
+body
+  font-family: "San Francisco"
+  text-align: center
+  margin: 0px
+  display: flex
+  flex-direction: column
+  height: 100vh
+  button.controlButton
+    border: none
+    height: 1rem
+    width: 1rem
+    border-radius: 100%
+    margin: 0.25rem
+    &#close
+      background: #F25056
+    &#minimize
+      background: #FAC536
+    &#maximize
+      background: #39EA49
+  .topbar
+    -webkit-app-region: drag
+    height: 2rem
+    width: 100vw
+    display: flex
+    align-items: center
+    background: #f5f5f5

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kudoe</title>
+    <link rel="stylesheet" href="./style/SF_Font.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./style/newFileUI.min.css">
+
+  </head>
+  <body>
+    <div class="topbar">
+      <button class="controlButton" id="close"></button>
+      <button class="controlButton" id="minimize"></button>
+      <button class="controlButton" id="maximize"></button>
+    </div>
+    <h1>Kudoe</h1>
+    <p>The <b>modern</b> text editor.</p>
+    <div id="documents">
+      <div class="document" id="newdoc"><i class="ion-ios-plus-empty"></i></div>
+    </div>
+    <script type="text/javascript">
+      const app = require('electron').remote.require('./index.js')
+      newdoc.onclick = () => app.createDocument()
+    </script>
+  </body>
+</html>
